@@ -9,6 +9,7 @@
     <meta name="keywords" content="html,css,js,portfolio">
     <meta name="description" content="Stephanie Reiso coding portfolio">
     <link rel="stylesheet" href="../css/styledesktop.css">
+    <link rel="stylesheet" href="../css/aboutdesktop.css">
     <link rel="stylesheet" href="../css/stylemobile.css">
     <script type="module" src="../js/script.js"></script>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
@@ -25,17 +26,95 @@
 <body>
     <header>
         <nav>
-
+            <div class="logo">
+                <a href="../index.html"><img src="../img/logo.png" alt="home" width="50px" height="50px"></a>
+            </div>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../html/about.html" aria-current="page">ABOUT</a></li>
+                <li><a href="../html/contact.html">CONTACT</a></li>
+            </ul>
+            <span class="darkmode" onclick="switchMode()">&#9788;</span>
         </nav>
+
+        <div class="hero-container">
+            <div class="hero-box">
+                <div class="hero-vl"></div>
+                <div class="hero-hl"></div>
+                <div class="hero-hl2"></div>
+                <div class="hero-content-container">
+                    <div class="hero-about-container">
+                        <h2>About</h2>
+                        <div class="hero-aboutline"></div>
+                    </div>
+                    <div class="hero-me-container">
+                        <h1>Me</h1>
+                        <div class="hero-meline"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>I’m an aspiring developer and designer, finding a brand new world with coding.</p>
+        <p>
+            Having myself experienced the lack of focus on user-experience and user-friendly websites/apps, I want my
+            work to show that shiny and sparkles isn’t always the way to go. Simplified and beautiful design, clear
+            visuals and subtle guidelines that explains a layout at a glance, and a non-stressful and non-disruptive use
+            of call to actions are the three main goals I keep to.
+        </p>
     </header>
 
     <main>
-        <section>
+        <section class="section1">
+            <h3>WORK WISDOM</h3>
+            <p>Being late at finding this path, I have experience in customer service, herbal remedies, office admin
+                work, luxury tourism and even refinancing loans. Even though I’m what you would call a Jack of all
+                trades, I appreciate each and every path I’ve walked earlier in life, as they have taught me valuable
+                bits and pieces I wish to include in my current journey.</p>
 
+                <div class="gallery-container">
+                    <div class="gallery">
+                        <a target="_blank" href="https://this-is-me-blond.vercel.app/">
+                            <img src="/img/portfoliov1.png" alt="First Portfolio Project" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="tag">HTML</div>
+                            <div class="tag">CSS</div>
+                            <div class="tag">JS</div>
+                        </div>
+                    </div>
+                </div>
+
+            
+
+        </section>
+
+        <section class="section2">
+            <h3>MY PERSONAL SELF</h3>
+            <p>In my spare time, my favorite thing to do is spend time with my loved ones. Together we experience the
+                beauty of traveling, the joy of tasting new and interesting foods and the excitement of delving into
+                challenging games.</p>
+
+            <p>Having fun and enjoying myself, both in and out of the work space, is my number one goal. I wish to
+                create lasting memories that will bring smiles in the years to come.
+            </p>
+            <p>So if you think we would be a good fit and don’t mind me learning as we go, let’s have a chat!</p>
+            </p>
+
+            <a href="html/about.html">
+                <button>GET IN TOUCH</button>
+            </a>
+            
         </section>
     </main>
 
     <footer>
+        <p>Designed in <span class="highlight">Figma</span> and coded in <span class="highlight">Visual Studio
+                Code</span></p>
+        <div>
+            <img src="../img/logo.png" alt="home" width="50px" height="50px">
+            <p class="footer-copyright">Stephanie Reiso &copy;2024</p>
+        </div>
 
     </footer>
 </body>

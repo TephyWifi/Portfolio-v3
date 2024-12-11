@@ -28,7 +28,7 @@ nav {
     align-items: center;
     overflow: hidden;
     /* background-color: peachpuff; */
-    
+
 }
 
 .logo {
@@ -59,7 +59,7 @@ nav li a {
 nav li a:hover {
     color: #343434;
     border-style: solid;
-    border-width: 0px 0px 2px 0px; 
+    border-width: 0px 0px 2px 0px;
     border-color: var(--dark-grey);
     transition: color 0.4s ease;
 }
@@ -107,6 +107,18 @@ nav li a:hover {
     top: 20px;
 }
 
+.hero-hl2 {
+    position: absolute;
+    z-index: 2;
+    border-bottom: 5px solid var(--light-beige);
+    width: 100%;
+    bottom: 20px;
+}
+
+
+
+
+
 .hero-vl {
     position: absolute;
     z-index: 2;
@@ -117,7 +129,7 @@ nav li a:hover {
 
 .hero-content-container {
     position: relative;
-    width: 80%;
+    width: 50%;
     height: 100px;
     display: flex;
     align-items: center;
@@ -125,49 +137,80 @@ nav li a:hover {
     /* background-color: yellow; */
 }
 
-.hero-title-container {
-    position: relative;
+
+
+.hero-about-container {
+    position: absolute;
+    display: flex;
     z-index: 3;
-    width: 406px;
-    height: 114px;
-    text-align: center;
-    font-family: var(--title-font);
+    width: 100vw;
+    height: 156px;
+    justify-content: center;
+    align-items: center;
     color: var(--light-beige);
-    top: 15px;
-    /* background-color: yellow; */
+    text-align: center;
+}
+
+.hero-aboutline {
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    border-bottom: 2px solid var(--light-beige);
+    width: 100%;
+    bottom: 55px;
 }
 
 h2 {
     font-weight: 150;
-    font-size: 32px;
+    font-size: 64px;
+    font-family: var(--title-font);
+}
+
+.hero-me-container {
+    position: absolute;
+    display: flex;
+    right: 50px;
+    z-index: 3;
+    width: 121px;
+    height: 156px;
+    border: 8px solid var(--brown);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-beige);
+    color: var(--brown);
+    text-align: center;
+}
+
+.hero-meline {
+    position: absolute;
+    z-index: 4;
+    border-bottom: 2px solid var(--brown);
+    width: 100%;
+    bottom: 47px;
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 48px;
+    font-weight: 500;
+    font-size: 64px;
+    font-family: var(--title-font);
 }
 
-
-.hero-portrait {
-    position: relative;
-    z-index: 3;
-    top: 30px;
-}
-
-.hero-portrait img {
-    border-bottom-left-radius: 40px;
-    object-fit: cover;
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--brown);
-    box-shadow: 0px 16px 15px -10px rgb(0,0,0,35%);
+header p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 10px;
 }
 
 main {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 50% 50%;
     align-items: center;
     background: var(--white);
+    margin-top: 20px;
 }
 
 .section1 {
@@ -177,10 +220,10 @@ main {
     height: 100%;
     padding: 80px 30px 80px 30px;
     border-style: solid;
-    border-width: 0px 2.5px 0px 0px; 
+    border-width: 5px 2.5px 0px 0px;
     border-color: var(--light-beige);
     text-align: center;
-    background-color: var(--light-beige);
+    background-color: var(--white);
 }
 
 .section1-container {
@@ -190,10 +233,11 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 200px;
-    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     background-color: var(--white);
-    
+
 }
+
 h3 {
     font-size: 20px;
     font-weight: 500;
@@ -226,8 +270,9 @@ button:hover {
 
 .section2 {
     padding: 80px 30px 80px 30px;
+    height: 100%;
     border-style: solid;
-    border-width: 0px 0px 0px 2.5px; 
+    border-width: 5px 5px 0px 2.5px;
     border-color: var(--light-beige);
     text-align: center;
     /* background-color: yellow; */
@@ -251,7 +296,7 @@ div.gallery {
 }
 
 div.gallery img {
-    
+
     width: 100%;
     height: auto;
     border: 2px solid var(--brown);
@@ -315,5 +360,3 @@ footer div {
     position: relative;
     font-size: 8px;
 }
-
-
