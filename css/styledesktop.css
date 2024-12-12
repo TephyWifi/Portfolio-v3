@@ -8,6 +8,7 @@
     --text-font: DM Sans;
 }
 
+@media only screen and (min-width: 900.99px) {
 * {
     box-sizing: border-box;
     margin: 0;
@@ -34,6 +35,14 @@ nav {
 .logo {
     cursor: pointer;
     /* background-color: pink; */
+}
+
+.logomobile, .menu, .contact {
+    display: none;
+}
+
+.overlaynav {
+    display: none;
 }
 
 nav ul {
@@ -137,14 +146,18 @@ nav li a:hover {
     /* background-color: yellow; */
 }
 
-h2 {
+h1 {
     font-weight: 150;
     font-size: 32px;
 }
 
-h1 {
+h2 {
     font-weight: bold;
     font-size: 48px;
+}
+
+.mobile-hi, .mobile-name {
+    display: none;
 }
 
 
@@ -330,3 +343,4 @@ footer div {
 }
 
 
+}

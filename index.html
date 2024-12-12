@@ -8,8 +8,10 @@
     <meta name="author" content="Stephanie Reiso">
     <meta name="keywords" content="html,css,js,portfolio">
     <meta name="description" content="Stephanie Reiso coding portfolio">
-    <link rel="stylesheet" href="css/styledesktop.css">
-    <link rel="stylesheet" href="css/stylemobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 900.99px)" href="css/styledesktop.css">
+    <link rel="stylesheet" media="screen and (min-width: 140px) and (max-width: 900px)" href="css/stylemobile.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/darkmode.css">
     <script type="module" src="js/script.js"></script>
     <link rel="icon" type="image/x-icon" href="img/favicon2.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,9 +27,19 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <a href="index.html"><img src="img/logo.png" alt="home" width="50px" height="50px"></a>
+            <div class="navcontainer">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt="home" width="50px" height="50px"></a>
+                <div class="logomobile"><img src="img/logo.png" width="50px" height="50px"></div>
+                <div id="myMenu" class="menu" onclick="toggleNav()">MENU</div>
+                <script src="js/script.js"></script>
+                <div id="myOverlaynav" class="overlaynav" style="width: 0;">
+                    <a href="index.html" aria-current="page">HOME</a>
+                    <a href="html/about.html">ABOUT</a>
+                    <a href="html/contact.html">CONTACT</a>
+                    <span class="darkmodemobile" onclick="switchMode()">&#9788;</span>
+                </div>
             </div>
+
             <ul>
                 <li><a href="index.html" aria-current="page">HOME</a></li>
                 <li><a href="html/about.html">ABOUT</a></li>
@@ -38,12 +50,12 @@
 
         <div class="hero-container">
             <div class="hero-box">
-                <div class="hero-vl"></div>
-                <div class="hero-hl"></div>
+                <hr class="hero-vl"></hr>
+                <hr class="hero-hl"></hr>
                 <div class="hero-content-container">
                     <div class="hero-title-container">
-                        <h2>Hi, my name is</h2>
-                        <h1>Stephanie</h1>
+                        <h1>Hi, my name is</h1>
+                        <h2>Stephanie</h2>
                     </div>
                     <div class="hero-portrait"><img src="img/portrait.jpg" alt="Stephanie Portrait" width="277px"
                             height="324px"></div>
@@ -51,15 +63,19 @@
             </div>
         </div>
         </div>
+
+        <h1 class="mobile-hi">Hi, my name is</h1>
+        <h2 class="mobile-name">Stephanie</h2>
+        <span class="arrow">&#8595;</span>
     </header>
 
     <main>
         <section class="section1">
             <div class="section1-container">
-            <h3>WHO AM I?</h3>
-            <p>Passionately learning about the world of HTML, CSS and JS, my favorite part lies at designing
-                user-friendly experiences and seeing them become a reality when it’s time to implement the code -
-                simple, clear and beautiful is what I aim for!</p>
+                <h3>WHO AM I?</h3>
+                <p>Passionately learning about the world of HTML, CSS and JS, my favorite part lies at designing
+                    user-friendly experiences and seeing them become a reality when it’s time to implement the code -
+                    simple, clear and beautiful is what I aim for!</p>
 
                 <a href="html/about.html">
                     <button>ABOUT ME</button>
@@ -73,40 +89,41 @@
             <p>This section is currently a work in progress, but you are welcome to view my current unfinished projects
                 as I grow.</p>
 
-            <div class="gallery-container">    
-            <div class="gallery">
-                <a target="_blank" href="https://this-is-me-blond.vercel.app/">
-                    <img src="/img/portfoliov1.png" alt="First Portfolio Project" width="600" height="400">
-                </a>
-                
-                <div class="desc">
-                    <div class="tag">HTML</div>
-                    <div class="tag">CSS</div>
-                    <div class="tag">JS</div>
-                </div>
-            </div>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <a target="_blank" href="https://this-is-me-blond.vercel.app/">
+                        <img src="/img/portfoliov1.png" alt="First Portfolio Project" width="600" height="400">
+                    </a>
 
-            <div class="gallery">
-                <a target="_blank" href="https://stephanie-portfolio-six.vercel.app/">
-                    <img src="/img/portfoliov2.png" alt="Second Portfolio Project" width="600" height="400">
-                </a>
-                <div class="desc">
-                    <div class="tag">HTML</div>
-                    <div class="tag">CSS</div>
+                    <div class="desc">
+                        <div class="tag">HTML</div>
+                        <div class="tag">CSS</div>
+                        <div class="tag">JS</div>
+                    </div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="https://stephanie-portfolio-six.vercel.app/">
+                        <img src="/img/portfoliov2.png" alt="Second Portfolio Project" width="600" height="400">
+                    </a>
+                    <div class="desc">
+                        <div class="tag">HTML</div>
+                        <div class="tag">CSS</div>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
     </main>
 
     <footer>
         <p>Designed in <span class="highlight"><a href="https://www.figma.com/" target="_blank"
-            rel="noreferrer noopener" aria-label="Figma (opens in a new tab)">Figma</a></span> and coded in
-    <span class="highlight"><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer noopener"
-            aria-label="Visual Studio Code (opens in a new tab)">Visual Studio
-            Code</a></span><br>Deployed with <span class="highlight"><a href="https://vercel.com/"
-            target="_blank" rel="noreferrer noopener"
-            aria-label="Vercel (opens in a new tab)">Vercel</a></span>.</p>
+                    rel="noreferrer noopener" aria-label="Figma (opens in a new tab)">Figma</a></span> and coded in
+            <span class="highlight"><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer noopener"
+                    aria-label="Visual Studio Code (opens in a new tab)">Visual Studio
+                    Code</a></span><br>Deployed with <span class="highlight"><a href="https://vercel.com/"
+                    target="_blank" rel="noreferrer noopener"
+                    aria-label="Vercel (opens in a new tab)">Vercel</a></span>.
+        </p>
         <div>
             <img src="img/logo.png" alt="home" width="50px" height="50px">
             <p class="footer-copyright">Stephanie Reiso &copy;2024</p>

@@ -157,7 +157,7 @@ nav li a:hover {
     bottom: 54px;
 }
 
-h2 {
+.hero-about-container h1 {
     font-weight: 150;
     font-size: 64px;
     font-family: var(--title-font);
@@ -203,10 +203,21 @@ h2 {
     bottom: 46px;
 }
 
-h1 {
+.hero-me-container h1 {
     font-weight: 500;
     font-size: 64px;
     font-family: var(--title-font);
+}
+
+header h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: var(--light-beige);
+}
+
+header h2 .highlight {
+    font-size: 20px;
 }
 
 header p {
@@ -216,7 +227,10 @@ header p {
     align-items: center;
     text-align: center;
     padding: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
+    font-size: 16px;
+    background-color: var(--light-beige);
+    margin-bottom: 0;
 }
 
 main {
@@ -225,7 +239,7 @@ main {
     column-rule: 2px solid var(--light-beige);
     align-items: center;
     background: var(--white);
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .section1 {
@@ -258,16 +272,6 @@ h3 {
     font-weight: 500;
     color: var(--brown);
     padding-bottom: 40px;
-}
-
-h4 {
-    text-align: center;
-    padding-top: 40px;
-    font-weight: 400;
-}
-
-h4 .highlight {
-    font-size: 14px;
 }
 
 p {
@@ -387,13 +391,6 @@ img {
     from {opacity: .4}
     to {opacity: 1}
 }
-
-@media only screen and (max-width: 300px) {
-    .prev, .next, .text {font-size: 11px}
-    .credit {font-size: 8px}
-}
-
-
 
 .section2 {
     padding: 80px 30px 80px 30px;

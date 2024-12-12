@@ -1,28 +1,20 @@
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+// Navbar
+function toggleNav() {
+    var element = document.getElementById("myOverlaynav")
+    var shown = element.getAttribute("data-isshown");
+    if (shown == "true") {
+        element.setAttribute("data-isshown", "false");
+        element.style.width = "0";
+    }
+    else {
+        element.setAttribute("data-isshown", "true");
+        element.style.width = "100%";
+    }
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length} ;
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) { 
-        dots[i].classList.remove("slideractive");
-    }
-    
-    slides[slideIndex-1].style.display="block";
-    dots[slideIndex-1].classList.add("slideractive");
+function switchMode() {
+    document.getElementById("switchMode");
+    let element = document.body;
+    element.classList.toggle("switchmode");
 }
