@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/aboutdesktop.css">
     <link rel="stylesheet" href="../css/stylemobile.css">
     <script type="module" src="../js/script.js"></script>
-    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../img/favicon2.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -39,23 +39,29 @@
 
         <div class="hero-container">
             <div class="hero-box">
-                <div class="hero-vl"></div>
-                <div class="hero-hl"></div>
-                <div class="hero-hl2"></div>
+                <hr class="hero-hl">
+                </hr>
+                <hr class="hero-hl2">
+                </hr>
                 <div class="hero-content-container">
                     <div class="hero-about-container">
                         <h2>About</h2>
-                        <div class="hero-aboutline"></div>
+                        <hr class="hero-aboutline">
+                        </hr>
                     </div>
-                    <div class="hero-me-container">
-                        <h1>Me</h1>
-                        <div class="hero-meline"></div>
+                    <div class="hero-me-backbox">
+                        <div class="hero-me-container">
+                            <h1>Me</h1>
+                            <hr class="hero-meline">
+                            </hr>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <p>I’m an aspiring developer and designer, finding a brand new world with coding.</p>
+        <h4>I’m an aspiring <span class="highlight">developer</span> and <span class="highlight">designer</span>,
+            exploring a brand new world with coding.</h4>
         <p>
             Having myself experienced the lack of focus on user-experience and user-friendly websites/apps, I want my
             work to show that shiny and sparkles isn’t always the way to go. Simplified and beautiful design, clear
@@ -72,21 +78,61 @@
                 trades, I appreciate each and every path I’ve walked earlier in life, as they have taught me valuable
                 bits and pieces I wish to include in my current journey.</p>
 
-                <div class="gallery-container">
-                    <div class="gallery">
-                        <a target="_blank" href="https://this-is-me-blond.vercel.app/">
-                            <img src="/img/portfoliov1.png" alt="First Portfolio Project" width="600" height="400">
-                        </a>
-                        <div class="desc">
-                            <div class="tag">HTML</div>
-                            <div class="tag">CSS</div>
-                            <div class="tag">JS</div>
-                        </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="../img/customer-service.jpg" style="width:100%">
+                    <div class="credit">Photo by <a
+                            href="https://unsplash.com/@machec?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Petr
+                            Macháček</a> on <a
+                            href="https://unsplash.com/photos/black-and-brown-headset-near-laptop-computer-BeVGrXEktIk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
                     </div>
+                    <div class="text">Customer Service has shown me what users need and want easily accessible</div>
                 </div>
-
-            
-
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="../img/calm-mind.jpg" style="width:100%">
+                    <div class="credit">Photo by <a
+                            href="https://unsplash.com/@yoannboyer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yoann
+                            Boyer</a> on <a
+                            href="https://unsplash.com/photos/person-about-to-touch-the-calm-water-i14h2xyPr18?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    </div>
+                    <div class="text">Learning about health helps me understand how important a
+                        calm and clean design is for a calm and focused mind</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="../img/office-admin.jpg" style="width:100%">
+                    <div class="credit">Photo by <a
+                            href="https://unsplash.com/@fempreneurstyledstock?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Leone
+                            Venter</a> on <a
+                            href="https://unsplash.com/photos/white-ipad-on-white-surface-pVt9j3iWtPM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    </div>
+                    <div class="text">Office Work and Luxury Tourism has made me understand the need and urgency
+                        of good planning, communication and organization</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="../img/opposite-lifestyles.jpg" style="width:100%">
+                    <div class="credit">Photo by <a
+                            href="https://unsplash.com/@dylu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jacek
+                            Dylag</a> on <a
+                            href="https://unsplash.com/photos/group-of-people-walking-on-pedestrian-lane-PMxT0XtQ--A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    </div>
+                    <div class="text">Witnessing a variety of lifestyles has taught me how to
+                        tailor solutions with a flexible mind</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <a href="javascript:void(0)" class="dot" onclick="currentSlide(1)" title="slide 1"></a>
+                <a href="javascript:void(0)" class="dot" onclick="currentSlide(2)" title="slide 2"></a>
+                <a href="javascript:void(0)" class="dot" onclick="currentSlide(3)" title="slide 3"></a>
+                <a href="javascript:void(0)" class="dot" onclick="currentSlide(4)" title="slide 4"></a>
+            </div>
+            <script src="../js/script.js"></script>
         </section>
 
         <section class="section2">
@@ -104,13 +150,19 @@
             <a href="html/about.html">
                 <button>GET IN TOUCH</button>
             </a>
-            
+
         </section>
     </main>
 
     <footer>
-        <p>Designed in <span class="highlight">Figma</span> and coded in <span class="highlight">Visual Studio
-                Code</span></p>
+        <p>Designed in <span class="highlight"><a href="https://www.figma.com/" target="_blank"
+                    rel="noreferrer noopener" aria-label="Figma (opens in a new tab)">Figma</a></span> and coded in
+            <span class="highlight"><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer noopener"
+                    aria-label="Visual Studio Code (opens in a new tab)">Visual Studio
+                    Code</a></span><br>Deployed with <span class="highlight"><a href="https://vercel.com/"
+                    target="_blank" rel="noreferrer noopener"
+                    aria-label="Vercel (opens in a new tab)">Vercel</a></span>.
+        </p>
         <div>
             <img src="../img/logo.png" alt="home" width="50px" height="50px">
             <p class="footer-copyright">Stephanie Reiso &copy;2024</p>

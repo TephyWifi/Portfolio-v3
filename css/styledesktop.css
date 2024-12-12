@@ -245,13 +245,12 @@ div.gallery-container {
 
 div.gallery {
     margin: 15px;
-    float: left;
     width: 45%;
+    min-width: 250px;
     /* background-color: yellow; */
 }
 
 div.gallery img {
-    
     width: 100%;
     height: auto;
     border: 2px solid var(--brown);
@@ -289,7 +288,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    border-top: 5px solid var(--light-beige);
+    border-top: 2px solid var(--light-beige);
     /* background-color: yellow; */
 }
 
@@ -298,9 +297,22 @@ footer p {
 }
 
 .highlight {
-    font-size: 10px;
     font-weight: bold;
+}
+
+.highlight a:link {
+    text-decoration: none;
+    font-size: 11px;
     color: var(--brown);
+}
+
+.highlight a:visited {
+    color: var(--dark-grey);
+}
+
+.highlight a:hover {
+    color: var(--dark-grey);
+    transition: color 0.4s ease;
 }
 
 footer div {
@@ -314,6 +326,7 @@ footer div {
 .footer-copyright {
     position: relative;
     font-size: 8px;
+    bottom: 5px;
 }
 
 
