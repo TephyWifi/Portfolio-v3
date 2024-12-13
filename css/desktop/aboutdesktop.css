@@ -32,6 +32,8 @@ nav {
 }
 
 .logo {
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     /* background-color: pink; */
 }
@@ -296,7 +298,8 @@ img {
     margin: auto;
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -320,7 +323,8 @@ img {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(253, 239, 230, 0.8);
 }
 
@@ -380,7 +384,8 @@ img {
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: var(--brown);
 }
 
@@ -390,8 +395,13 @@ img {
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 .section2 {
@@ -464,7 +474,11 @@ footer div {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
 
+footer div img {
+    width: 50px;
+    height: 50px;
 }
 
 .footer-copyright {
