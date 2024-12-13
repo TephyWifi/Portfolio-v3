@@ -12,7 +12,7 @@ function toggleNav() {
     }
 }
 
-
+// Darkmode
 function switchMode() {
     document.getElementById("switchMode");
     let element = document.body;
