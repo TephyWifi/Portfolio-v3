@@ -8,7 +8,6 @@
     --text-font: DM Sans;
 }
 
-@media only screen and (min-width: 900.99px) {
 * {
     box-sizing: border-box;
     margin: 0;
@@ -33,19 +32,16 @@ nav {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    display: inherit;
     cursor: pointer;
     /* background-color: pink; */
 }
 
-.logomobile, .menu, .contact {
-    display: none;
+.logo img {
+    width: 50px;
+    height: 50px;
 }
 
-.overlaynav {
-    display: none;
-}
 
 nav ul {
     list-style: none;
@@ -166,11 +162,6 @@ h2 {
     to {left: 0px; opacity: 100%;}
 }
 
-.mobile-hi, .mobile-name {
-    display: none;
-}
-
-
 .hero-portrait {
     position: relative;
     z-index: 3;
@@ -190,10 +181,6 @@ h2 {
     border-width: 2px;
     border-color: var(--brown);
     box-shadow: 0px 16px 15px -10px rgb(0,0,0,35%);
-}
-
-.arrow {
-    display: none;
 }
 
 main {
@@ -288,7 +275,7 @@ div.gallery img {
 
 div.gallery img:hover {
     border: 2px solid var(--brown);
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
@@ -344,6 +331,7 @@ footer {
 
 footer p {
     font-size: 10px;
+    padding-bottom: 0;
 }
 
 
@@ -397,7 +385,23 @@ footer div img {
     position: relative;
     font-size: 8px;
     bottom: 5px;
+    padding-bottom: 10px;
 }
 
 
+/* Mobile CSS */
+.logomobile, .menu, .contact {
+    display: none;
+}
+
+.overlaynav {
+    display: none;
+}
+
+.mobile-hi, .mobile-name {
+    display: none;
+}
+
+.arrow {
+    display: none;
 }
