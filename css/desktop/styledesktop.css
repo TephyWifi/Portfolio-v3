@@ -175,6 +175,8 @@ h2 {
 }
 
 .hero-portrait img {
+    width: 277px;
+    height: 324px;
     border-bottom-left-radius: 40px;
     object-fit: cover;
     border-style: solid;
@@ -247,7 +249,7 @@ button:hover {
     /* background-color: yellow; */
 }
 
-div.gallery-container {
+.gallery-container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -257,7 +259,7 @@ div.gallery-container {
 
 }
 
-div.gallery {
+.gallery {
     margin: 15px;
     width: 25%;
     min-width: 250px;
@@ -265,7 +267,7 @@ div.gallery {
     /* background-color: yellow; */
 }
 
-div.gallery img {
+.gallery img {
     width: 100%;
     height: auto;
     border: 3px solid var(--light-beige);
@@ -273,19 +275,19 @@ div.gallery img {
     transition: transform .5s, border .5s, box-shadow .5s;
 }
 
-div.gallery img:hover {
+.gallery img:hover {
     border: 2px solid var(--brown);
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-div.titleholder {
+.titleholder {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-div.title {
+.title {
     color: var(--brown);
     padding: 3px 0px 2px 0px;
     font-family: var(--title-font);
@@ -294,7 +296,7 @@ div.title {
     font-weight: 600;
 }
 
-div.desc {
+.desc {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -303,7 +305,7 @@ div.desc {
     width: 100%;
 }
 
-div.tag {
+.tag {
     color: var(--dark-grey);
     background-color: var(--light-beige);
     padding: 6px;
@@ -332,20 +334,24 @@ footer {
 footer p {
     font-size: 10px;
     padding-bottom: 0;
+
 }
 
-
+footer div span {
+    display: inline-block;
+}
 
 .footer-left {
     position: relative;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     margin: 0px;
     padding: 0px;
     align-items: start;
     text-align: start;
+    justify-content: center;
     height: 40px;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .highlight {
@@ -373,8 +379,6 @@ footer div {
     justify-content: center;
     text-align: center;
 }
-
-
 
 footer div img {
     width: 50px;

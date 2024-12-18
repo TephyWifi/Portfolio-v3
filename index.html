@@ -26,33 +26,32 @@
 </head>
 
 <body>
+    <nav>
+        <!-- Desktop -->
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="home"></a>
+        </div>
+        <ul>
+            <li><a href="index.html" aria-current="page">HOME</a></li>
+            <li><a href="html/about.html">ABOUT</a></li>
+            <li><a href="html/contact.html">CONTACT</a></li>
+        </ul>
+        <span class="darkmode" onclick="switchMode()">&#9788;</span>
+
+        <!-- Mobile -->
+        <div class="logomobile">
+            <img class="logomobile" src="img/logo.png">
+        </div>
+        <button id="myMenu" type="button" class="menu" onclick="toggleNav()">MENU</button>
+        <script src="js/script.js"></script>
+        <div id="myOverlaynav" class="overlaynav" style="width: 0;">
+            <a href="index.html" aria-current="page">HOME</a>
+            <a href="html/about.html">ABOUT</a>
+            <a href="html/contact.html">CONTACT</a>
+            <span class="darkmodemobile" onclick="switchMode()">&#9788;</span>
+        </div>
+    </nav>
     <header>
-        <nav>
-            <!-- Desktop -->
-            <div class="logo">
-                <a href="index.html"><img src="img/logo.png" alt="home"></a>
-            </div>
-            <ul>
-                <li><a href="index.html" aria-current="page">HOME</a></li>
-                <li><a href="html/about.html">ABOUT</a></li>
-                <li><a href="html/contact.html">CONTACT</a></li>
-            </ul>
-            <span class="darkmode" onclick="switchMode()">&#9788;</span>
-
-            <!-- Mobile -->
-            <div class="logomobile">
-                <img class="logomobile" src="img/logo.png">
-            </div>
-            <button id="myMenu" type="button" class="menu" onclick="toggleNav()">MENU</button>
-            <script src="js/script.js"></script>
-            <div id="myOverlaynav" class="overlaynav" style="width: 0;">
-                <a href="index.html" aria-current="page">HOME</a>
-                <a href="html/about.html">ABOUT</a>
-                <a href="html/contact.html">CONTACT</a>
-                <span class="darkmodemobile" onclick="switchMode()">&#9788;</span>
-            </div>
-        </nav>
-
         <!-- Desktop -->
         <div class="hero-container">
             <div class="hero-box">
@@ -65,8 +64,7 @@
                         <h1>Hi, my name is</h1>
                         <h2>Stephanie</h2>
                     </div>
-                    <div class="hero-portrait"><img src="img/portrait.jpg" alt="Stephanie Portrait" width="277px"
-                            height="324px"></div>
+                    <div class="hero-portrait"><img src="img/portrait.jpg" alt="Stephanie Portrait"></div>
                 </div>
             </div>
         </div>
@@ -76,13 +74,12 @@
         <h1 class="mobile-hi">Hi, my name is</h1>
         <h2 class="mobile-name">Stephanie</h2>
         <div class="arrowholder">
-            <div class="arrow"></div>
-            <div class="arrow"></div>
-            <div class="arrow"></div>
+            <!-- <div class="arrow"></div> -->
+            <a class="arrow" href="#main">v</a>
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <section class="section1">
             <div class="section1-container">
                 <h3>WHO AM I?</h3>
@@ -144,22 +141,22 @@
     </main>
 
     <footer>
-
-        <p>Designed in <span class="highlight"><a href="https://www.figma.com/" target="_blank"
-                    rel="noreferrer noopener" aria-label="Figma (opens in a new tab)">Figma</a></span> and coded in
-            <span class="highlight"><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer noopener"
-                    aria-label="Visual Studio Code (opens in a new tab)">Visual Studio
-                    Code</a></span><br>Deployed with <span class="highlight"><a href="https://vercel.com/"
-                    target="_blank" rel="noreferrer noopener"
-                    aria-label="Vercel (opens in a new tab)">Vercel</a></span>.
-        </p>
-        <!-- <p>test</p> -->
+        <div class="footer-left">
+            <p>Designed in <span class="highlight"><a class="highlight" href="https://www.figma.com/" target="_blank"
+                        rel="noreferrer noopener" aria-label="Figma (opens in a new tab)">Figma</a></span> and coded in
+                <span class="highlight"><a href="https://code.visualstudio.com/" target="_blank"
+                        rel="noreferrer noopener" aria-label="Visual Studio Code (opens in a new tab)">Visual Studio
+                        Code</a></span>
+            </p>
+            <p>Deployed with <span class="highlight"><a href="https://vercel.com/" target="_blank"
+                        rel="noreferrer noopener" aria-label="Vercel (opens in a new tab)">Vercel</a></span>.
+            </p>
+        </div>
 
         <div>
             <img src="img/logo.png" alt="logo">
             <p class="footer-copyright">Stephanie Reiso &copy;2024</p>
         </div>
-
     </footer>
 </body>
 
