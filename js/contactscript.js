@@ -34,3 +34,4 @@ document.getElementById("contactForm").addEventListener("sumbit", function (even
         alert("Thank you for reaching out!")
     }
 });
+

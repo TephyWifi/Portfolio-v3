@@ -32,16 +32,21 @@ nav {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    display: inherit;
     cursor: pointer;
     /* background-color: pink; */
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
     overflow: hidden;
     cursor: pointer;
+    padding: 0;
 }
 
 nav li {
@@ -92,7 +97,7 @@ nav li a:hover {
     position: relative;
     z-index: 1;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 198px;
@@ -131,35 +136,35 @@ nav li a:hover {
     border-bottom: 2px solid var(--light-beige);
     width: 100%;
     bottom: 75px;
-    background-color: yellow;
 }
 
+.hero-meline {
+    position: absolute;
+    z-index: 4;
+    border-bottom: 2px solid var(--brown);
+    width: 100%;
+    bottom: 46px;
+}
 
 .hero-content-container {
     position: relative;
-    width: 50%;
+    width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    /* background-color: pink; */
+    justify-content: center;
 }
-
-
 
 .hero-about-container {
     position: absolute;
     display: flex;
     z-index: 3;
-    width: 100%;
+    flex: 50%;
     height: 156px;
-    justify-content: center;
     align-items: center;
     color: var(--light-beige);
-    text-align: center;
-    /* background-color: yellow; */
+    padding-right: 100px;
 }
-
 
 .hero-about-container h1 {
     font-weight: 150;
@@ -167,10 +172,20 @@ nav li a:hover {
     font-family: var(--title-font);
 }
 
+.hero-me-container {
+    position: absolute;
+    display: flex;
+    z-index: 3;
+    flex: 100%;
+    height: 156px;
+    padding-left: 100px;
+    align-items: center;
+    color: var(--light-beige);
+}
+
 .hero-me-backbox {
     position: absolute;
     display: flex;
-    right: 50px;
     z-index: 3;
     width: 110px;
     height: 198px;
@@ -178,11 +193,9 @@ nav li a:hover {
     justify-content: center;
     align-items: center;
     background-color: var(--brown);
-    right: 0px;
-
 }
 
-.hero-me-container {
+.hero-me-box {
     position: absolute;
     display: flex;
     right: 50px;
@@ -199,14 +212,6 @@ nav li a:hover {
     right: -5.5px;
 }
 
-.hero-meline {
-    position: absolute;
-    z-index: 4;
-    border-bottom: 2px solid var(--brown);
-    width: 100%;
-    bottom: 46px;
-}
-
 .hero-me-container h1 {
     font-weight: 500;
     font-size: 64px;
@@ -216,25 +221,35 @@ nav li a:hover {
 header h2 {
     text-align: center;
     font-weight: 400;
-    font-size: 20px;
+    font-family: var(--title-font);
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: var(--brown);
     background-color: var(--light-beige);
 }
 
-header h2 .highlight {
-    font-size: 20px;
+.headersymbol {
+    font-size: 30px;
 }
 
 header p {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 30px;
-    padding-bottom: 40px;
     font-size: 16px;
+    font-weight: 300;
+    padding: 50px;
+    padding-top: 0;
+    padding-bottom: 50px;
+    font-family: var(--title-font);
+    color: var(--dark-grey);
     background-color: var(--light-beige);
-    margin-bottom: 0;
+
 }
 
 main {
@@ -448,6 +463,24 @@ footer {
 
 footer p {
     font-size: 10px;
+    padding-bottom: 0;
+}
+
+footer div span {
+    display: inline-block;
+}
+
+.footer-left {
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-items: start;
+    text-align: start;
+    justify-content: center;
+    height: 40px;
+    /* background-color: pink; */
 }
 
 .highlight {
@@ -485,4 +518,21 @@ footer div img {
     position: relative;
     font-size: 8px;
     bottom: 5px;
+}
+
+/* Mobile CSS */
+.logomobile, .menu, .contact {
+    display: none;
+}
+
+.overlaynav {
+    display: none;
+}
+
+.mobile-hi, .mobile-name {
+    display: none;
+}
+
+.arrow {
+    display: none;
 }

@@ -9,9 +9,11 @@
     <meta name="keywords" content="html,css,js,portfolio">
     <meta name="description" content="Stephanie Reiso coding portfolio">
     <link rel="stylesheet" media="screen and (min-width: 900px)" href="../css/desktop/aboutdesktop.css">
-    <link rel="stylesheet" media="screen and (min-width: 140px) and (max-width: 899px)" href="../css/aboutmobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 140px) and (max-width: 899.99px)"
+        href="../css/mobile/aboutmobile.css">
     <link rel="stylesheet" href="../css/media.css">
     <link rel="stylesheet" href="../css/darkmode.css">
+    <script type="module" src="../js/script.js"></script>
     <script type="module" src="../js/aboutscript.js"></script>
     <link rel="icon" type="image/x-icon" href="../img/favicon2.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,55 +27,71 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="navcontainer">
-                <a href="../index.html"><img class="logo" src="../img/logo.png" alt="home"></a>
-            </div>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="../html/about.html" aria-current="page">ABOUT</a></li>
-                <li><a href="../html/contact.html">CONTACT</a></li>
-            </ul>
-            <span class="darkmode" onclick="switchMode()">&#9788;</span>
-        </nav>
+    <nav>
+        <!-- Desktop -->
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="home"></a>
+        </div>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../html/about.html" aria-current="page">ABOUT</a></li>
+            <li><a href="../html/contact.html">CONTACT</a></li>
+        </ul>
+        <span class="darkmode" onclick="switchMode()">&#9788;</span>
 
+        <!-- Mobile -->
+        <div class="logomobile">
+            <img src="../img/logo.png">
+        </div>
+        <button id="myMenu" type="button" class="menu" onclick="toggleNav()">MENU</button>
+        <script src="../js/script.js"></script>
+        <div id="myOverlaynav" class="overlaynav" style="width: 0;">
+            <a href="../index.html" aria-current="page">HOME</a>
+            <a href="../html/about.html">ABOUT</a>
+            <a href="../html/contact.html">CONTACT</a>
+            <span class="darkmodemobile" onclick="switchMode()">&#9788;</span>
+        </div>
+    </nav>
+
+    <header>
+        <!-- Container, box, lines og backbox er design for header -->
         <div class="hero-container">
             <div class="hero-box">
                 <hr class="hero-hl">
                 </hr>
                 <hr class="hero-hl2">
                 </hr>
-                <hr class="hero-aboutline"></hr>
+                <hr class="hero-aboutline">
+                </hr>
                 <div class="hero-content-container">
                     <div class="hero-about-container">
                         <h1>About</h1>
                     </div>
-                    <div class="hero-me-backbox">
-                        <div class="hero-me-container">
-                            <h1>Me</h1>
-                            <hr class="hero-meline">
-                            </hr>
+                    <div class="hero-me-container">
+                        <div class="hero-me-backbox">
+                            <div class="hero-me-box">
+                                <h1>Me</h1>
+                                <hr class="hero-meline">
+                                </hr>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <h2>I’m an aspiring <span class="highlight">developer</span> and <span class="highlight">designer</span>,
-            exploring a brand new world with coding.</h2>
-        <p>
-            Having myself experienced the lack of focus on user-experience and user-friendly websites/apps, I want my
-            work to show that shiny and sparkles isn’t always the way to go. Simplified and beautiful design, clear
-            visuals and subtle guidelines that explains a layout at a glance, and a non-stressful and non-disruptive use
-            of call to actions are the three main goals I keep to.
-        </p>
+        <h2>DEVELOPER <span class="headersymbol">&#9901;</span> DESIGNER</h2>
+        <p>EXPLORING A BRAND NEW WORLD WITH CODING</p>
+        <div class="arrowholder">
+            <a class="arrow" href="#main">v</a>
+        </div>
     </header>
 
-    <main>
+    <main id="main">
         <section class="section1">
             <h3>WORK WISDOM</h3>
-            <p>Being late at finding this path, I have experience in customer service, healthcare, office work, luxury tourism and even economy. Even though I’m what you would call a Jack of all
+            <p>Being late at finding this path, I have experience in customer service, healthcare, office work, luxury
+                tourism and even economy. Even though I’m what you would call a Jack of all
                 trades, I appreciate each and every path I’ve walked earlier in life, as they have taught me valuable
                 bits and pieces I wish to include in my current journey.</p>
 
@@ -146,22 +164,25 @@
             <p>So if you think we would be a good fit and don’t mind me learning as we go, let’s have a chat!</p>
             </p>
 
-            <a href="../html/contact.html">
-                <button>GET IN TOUCH</button>
-            </a>
+            <div class="mobilebutton">
+                <a href="../html/contact.html"><button>GET IN TOUCH</button></a>
+            </div>
 
         </section>
     </main>
 
     <footer>
-        <p>Designed in <span class="highlight"><a href="https://www.figma.com/" target="_blank"
-                    rel="noreferrer noopener" aria-label="Figma (opens in a new tab)">Figma</a></span> and coded in
-            <span class="highlight"><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer noopener"
-                    aria-label="Visual Studio Code (opens in a new tab)">Visual Studio
-                    Code</a></span><br>Deployed with <span class="highlight"><a href="https://vercel.com/"
-                    target="_blank" rel="noreferrer noopener"
-                    aria-label="Vercel (opens in a new tab)">Vercel</a></span>.
-        </p>
+        <div class="footer-left">
+            <p>Designed in <span class="highlight"><a class="highlight" href="https://www.figma.com/" target="_blank"
+                        rel="noreferrer noopener" aria-label="Figma (opens in a new tab)">Figma</a></span> and coded in
+                <span class="highlight"><a href="https://code.visualstudio.com/" target="_blank"
+                        rel="noreferrer noopener" aria-label="Visual Studio Code (opens in a new tab)">Visual Studio
+                        Code</a></span>
+            </p>
+            <p>Deployed with <span class="highlight"><a href="https://vercel.com/" target="_blank"
+                        rel="noreferrer noopener" aria-label="Vercel (opens in a new tab)">Vercel</a></span>.
+            </p>
+        </div>
         <div>
             <img src="../img/logo.png" alt="logo">
             <p class="footer-copyright">Stephanie Reiso &copy;2024</p>
