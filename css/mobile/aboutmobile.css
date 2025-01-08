@@ -1,8 +1,8 @@
 /* Color scheme and fonts */
 :root {
     --white: #ffffff;
-    --light-beige: rgb(253, 239, 230);
-    --brown: rgb(186, 147, 111);
+    --light-beige: #fdefe6;
+    --brown: #ba936f;
     --dark-grey: #343434;
     --title-font: Kanit;
     --text-font: DM Sans;
