@@ -272,6 +272,8 @@ main {
     border-color: var(--light-beige);
     text-align: center;
     background-color: var(--white);
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .section1-container {
@@ -426,6 +428,8 @@ img {
     border-width: 2px 0px 0px 1px;
     border-color: var(--light-beige);
     text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
     /* background-color: yellow; */
 }
 

@@ -1,0 +1,137 @@
+:root {
+    --white: #ffffff;
+    --light-beige: rgb(253, 239, 230);
+    --brown: #BA936F;
+    --dark-grey: #343434;
+    --dark-brown: #342A21;
+    --title-font: Kanit;
+    --text-font: DM Sans;
+}
+
+
+.switchmode {
+    /* HOME */
+    nav {
+        background-image: linear-gradient(230deg, var(--dark-grey) 85%, var(--white) calc(85% + 2px)); 
+    }
+
+    nav li a {
+        color: var(--white);
+    }
+    
+    nav li a:hover {
+        color: var(--brown);
+        border-bottom: 2px solid var(--brown);
+        
+    }
+
+    .darkmode {
+        color: var(--white);
+    }
+    
+    .darkmode:hover {
+        color: #BA936F;
+        transition: color 0.4s ease;
+    }
+
+    .hero-container {
+        background-color: var(--dark-brown);
+    }
+
+    .hero-box {
+        background-color: var(--dark-grey);
+    }
+
+    .hero-hl {
+        display: none;
+    }
+    
+    .hero-vl {
+        display: none;
+    }
+
+    .hero-title-container {
+        color: var(--brown);
+
+    }
+    
+    main {
+        background: var(--dark-grey);
+    }
+
+    .section1 {
+        background-image: linear-gradient(140deg, var(--dark-brown) 87%, var(--dark-grey) calc(87% + 2px));
+    }
+    
+    .section1-container {
+        background-color: var(--dark-brown);
+        box-shadow: none;
+    }
+
+    h3 {
+        color: var(--brown);
+    }
+    
+    p {
+        color: var(--white);
+    }
+
+    button {
+        color: var(--light-beige);
+        background-color: var(--brown);
+        border: 2px solid var(--dark-brown);
+
+    }
+    
+    button:hover {
+        color: var(--brown);
+        background-color: var(--light-beige);
+        transition: color 0.1s ease;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border: 3px solid var(--brown);
+        border-radius: 10px;
+        transition: transform .5s, border .5s, box-shadow .5s;
+    }
+
+    .gallery img:hover {
+        border: 2px solid var(--light-beige);
+    }
+
+    .title {
+        color: var(--light-beige);
+    }
+
+    footer {
+        border-top: 2px solid var(--dark-brown);
+        background-image: linear-gradient(130deg, var(--dark-grey) 80%, var(--white) calc(80% + 2px)); 
+
+    }
+
+    footer p {
+        color: var(--white);
+    
+    }
+    
+    .highlight a:link {
+        color: var(--light-beige);
+    }
+    
+    .highlight a:visited {
+        color: var(--brown);
+    }
+    
+    .highlight a:hover {
+        color: var(--brown);
+        transition: color 0.4s ease;
+    }
+
+    .footer-copyright {
+        color: var(--dark-grey);
+    }
+
+
+}
