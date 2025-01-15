@@ -41,30 +41,13 @@
         background-color: var(--dark-grey);
     }
 
-    .hero-hl {
-        display: none;
-    }
-    
-    .hero-vl {
+    .hero-hl, .hero-vl, .hero-hl2, .hero-aboutline, .hero-meline {
         display: none;
     }
 
     .hero-title-container {
         color: var(--brown);
 
-    }
-    
-    .hero-hl2 {
-        display: none;
-    }
-    
-    
-    .hero-aboutline {
-        display: none;
-    }
-    
-    .hero-meline {
-        display: none;
     }
     
     .hero-about-container {
@@ -169,19 +152,7 @@
     }
     
     /* Mobile CSS */
-    .logomobile, .menu, .contact {
-        display: none;
-    }
-    
-    .overlaynav {
-        display: none;
-    }
-    
-    .mobile-hi, .mobile-name {
-        display: none;
-    }
-    
-    .arrow {
+    .logomobile, .menu, .contact, .overlaynav, .mobile-hi, .mobile-name, .arrow {
         display: none;
     }
     

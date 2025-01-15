@@ -311,7 +311,7 @@ img {
 
 .slideshow-container {
     max-width: 500px;
-    min-width: 250px;
+    min-width: 340px;
     position: relative;
     margin: auto;
 }
@@ -372,7 +372,7 @@ img {
 .text {
     /* color: var(--white); */
     color: var(--dark-grey);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     padding: 15px 12px;
     position: absolute;

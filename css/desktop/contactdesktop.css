@@ -131,7 +131,12 @@ h1 {
 }
 
 .form-group {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    visibility: hidden;
+    font-size: 1px;
 }
 
 input, textarea {
@@ -172,6 +177,47 @@ textarea {
     transition: color 0.1s ease;
 }
 
+.socials {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    padding: 0;
+    animation: socialfade 3s forwards ease;
+}
+
+@keyframes socialfade {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+.socials li {
+    margin: 20px;
+    
+}
+
+.socials a {
+    text-decoration: none;
+    color: var(--brown);
+
+    
+}
+
+.socials a i {
+    font-size: 3rem;
+
+}
+
+.socials a:hover {
+    color: var(--dark-grey);
+    transition: color .4s ease;
+    transform: scale(2, 0.5);
+}
+
+
+
 footer {
     position: relative;
     bottom: 0;
@@ -182,7 +228,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    border-top: 2px solid var(--light-beige);
+    /* border-top: 2px solid var(--light-beige); */
     /* background-color: yellow; */
 }
 

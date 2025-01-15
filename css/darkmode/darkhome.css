@@ -4,6 +4,7 @@
     --brown: #BA936F;
     --dark-grey: #343434;
     --dark-brown: #342A21;
+    --dark-darkbrown: #2d241c;
     --title-font: Kanit;
     --text-font: DM Sans;
 }
@@ -12,7 +13,7 @@
 .switchmode {
     /* HOME */
     nav {
-        background-image: linear-gradient(230deg, var(--dark-grey) 85%, var(--white) calc(85% + 2px)); 
+        background-image: linear-gradient(230deg, var(--dark-darkbrown) 85%, var(--white) calc(85% + 2px)); 
     }
 
     nav li a {
@@ -39,7 +40,7 @@
     }
 
     .hero-box {
-        background-color: var(--dark-grey);
+        background-color: var(--dark-darkbrown);
     }
 
     .hero-hl {
