@@ -4,6 +4,7 @@
     --brown: #BA936F;
     --dark-grey: #343434;
     --dark-brown: #342A21;
+    --dark-darkbrown: #2d241c;
     --title-font: Kanit;
     --text-font: DM Sans;
 }
@@ -11,7 +12,7 @@
 
 .switchmode {
     nav {
-        background-image: linear-gradient(230deg, var(--dark-grey) 85%, var(--white) calc(85% + 2px)); 
+        background-image: linear-gradient(230deg, var(--dark-darkbrown) 85%, var(--white) calc(85% + 2px)); 
     }
 
     nav li a {
@@ -38,7 +39,7 @@
     }
 
     .hero-box {
-        background-color: var(--dark-grey);
+        background-color: var(--dark-darkbrown);
     }
 
     .hero-hl, .hero-vl, .hero-hl2, .hero-aboutline, .hero-meline {
@@ -60,14 +61,14 @@
     
     .hero-me-backbox {
         outline: none;
-        background-color: var(--dark-grey);
+        background-color: var(--dark-darkbrown);
     }
     
     .hero-me-box {
-        border: 8px solid var(--dark-grey);
-        outline: 1px solid var(--dark-grey);
+        border: 8px solid var(--dark-darkbrown);
+        outline: 1px solid var(--dark-darkbrown);
         background-color: var(--white);
-        color: var(--dark-grey);
+        color: var(--dark-darkbrown);
     }
     
     header h2 {
@@ -86,16 +87,16 @@
     }
 
     main {
-        background: var(--dark-grey);
+        background: var(--dark-darkbrown);
     }
     
     .section1 {
         border-color: var(--dark-brown);
-        background-color: var(--dark-grey);
+        background-color: var(--dark-darkbrown);
     }
     
     .section1-container {
-        background-color: var(--dark-grey);
+        background-color: var(--dark-darkbrown);
     }
     
     h3 {
@@ -125,7 +126,7 @@
     
     footer {
         border-top: 2px solid var(--dark-brown);
-        background-image: linear-gradient(130deg, var(--dark-grey) 80%, var(--white) calc(80% + 2px)); 
+        background-image: linear-gradient(130deg, var(--dark-darkbrown) 80%, var(--white) calc(80% + 2px)); 
 
     }
 
@@ -148,7 +149,7 @@
     }
 
     .footer-copyright {
-        color: var(--dark-grey);
+        color: var(--dark-darkbrown);
     }
     
     /* Mobile CSS */

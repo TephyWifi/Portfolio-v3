@@ -393,7 +393,10 @@ footer div img {
     position: relative;
     font-size: 8px;
     bottom: 5px;
-    padding-bottom: 10px;
+}
+
+time {
+    font-size: 10px;
 }
 
 

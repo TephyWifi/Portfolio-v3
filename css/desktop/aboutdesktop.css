@@ -525,6 +525,10 @@ footer div img {
     bottom: 5px;
 }
 
+time {
+    font-size: 10px;
+}
+
 /* Mobile CSS */
 .logomobile, .menu, .contact {
     display: none;

@@ -61,12 +61,16 @@
     }
 
     .section1 {
-        background-image: linear-gradient(140deg, var(--dark-brown) 87%, var(--dark-grey) calc(87% + 2px));
+        background-image: linear-gradient(140deg, var(--dark-brown) 87%, var(--dark-darkbrown) calc(87% + 2px));
     }
     
     .section1-container {
         background-color: var(--dark-brown);
         box-shadow: none;
+    }
+
+    .section2 {
+        background-color: var(--dark-darkbrown);
     }
 
     h3 {
@@ -108,7 +112,7 @@
 
     footer {
         border-top: 2px solid var(--dark-brown);
-        background-image: linear-gradient(130deg, var(--dark-grey) 80%, var(--white) calc(80% + 2px)); 
+        background-image: linear-gradient(130deg, var(--dark-darkbrown) 80%, var(--white) calc(80% + 2px)); 
 
     }
 
