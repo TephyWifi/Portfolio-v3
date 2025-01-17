@@ -158,6 +158,72 @@ textarea {
     display: none;
 }
 
+form h2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: var(--brown);
+
+}
+
+.first-buttons, .last-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.unshift-button, .push-button, .shift-button, .pop-button {
+    border: none;
+    background: none;
+    margin: 10px;
+    font-size: 20px;
+    color: var(--brown);
+}
+
+.unshift-button:hover, .push-button:hover {
+    background-color: rgb(125, 209, 125);
+    color: white;
+    border-radius: 20%;
+}
+
+.shift-button:hover, .pop-button:hover {
+    background-color: rgb(233, 98, 98);
+    color: white;
+    border-radius: 20%;
+}
+
+form ul {
+    margin: 0;
+    padding: 0;
+}
+
+form ul li {
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background-color: var(--light-beige);
+    border-radius: 50px;
+    font-size: 12px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+
+.moodbox {
+    display: flex;
+    justify-content: center;
+}
+
+.mood-input {
+    width: 75%;
+    border: none;
+    box-shadow: none;
+}
+
+
+
 .submit-button {
     font-family: var(--title-font);
     font-weight: bold;
