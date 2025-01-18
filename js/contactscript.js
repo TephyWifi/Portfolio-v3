@@ -2,7 +2,7 @@ const element = document.getElementById("myMenu");
 element.addEventListener("click", function toggleNav() {
     let element = document.getElementById("myOverlaynav");
     let shown = element.getAttribute("data-isshown");
-    element.addEventListener("click", toggleNav);
+    // element.addEventListener("click", toggleNav);
 
     if (shown == "true") {
         element.setAttribute("data-isshown", "false");
@@ -16,7 +16,7 @@ element.addEventListener("click", function toggleNav() {
     }
 });
 
-document.getElementById("contactForm").addEventListener("sumbit", function (event) {
+document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
     const errorElements = document.querySelectorAll(".error-message");
@@ -24,7 +24,6 @@ document.getElementById("contactForm").addEventListener("sumbit", function (even
 
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
     const message = document.getElementById("message").value.trim();
 
     let isValid = true;
@@ -55,12 +54,6 @@ document.getElementById("contactForm").addEventListener("sumbit", function (even
 
 
 // Mood Buttons
-// let addFirstButton = document.querySelector(".unshift-button");
-// let addLastButton = document.querySelector(".push-button");
-// let removeFirstButton = document.querySelector(".shift-button");
-// let removeLastButton = document.querySelector(".pop-button");
-
-
 let inputField = document.getElementById("myInput");
 let moodList = [];
 
@@ -76,6 +69,7 @@ function showMood() {
 }
 
 document.getElementById("moodBox").addEventListener("click", function (event) {
+    console.log("Button clicked:", event.target);
     let target = event.target;
 
     if (target.classList.contains("unshift-button")) {
@@ -113,51 +107,3 @@ document.getElementById("moodBox").addEventListener("click", function (event) {
         }
     }
 });
-
-
-// let i;
-// for (i = 0; i < addFirst.length; i++) {
-//     let span = document.createElement("span");
-//     span.className
-
-// }
-
-// let moodList = 1;
-// showMood(moodList);
-
-// function unShift() {
-//     showMood(moodList.unshift(newElement));
-
-// }
-
-// function newElement() {
-//     let li = document.createElement("li");
-//     let inputValue = document.getElementById("myInput").value;
-//     let t = document.createTextNode(inputValue);
-//     li.appendChild(t);
-//     if(inputValue === '') {
-//         alert("Please type in your mood!");
-//     }
-//     else {
-//         document.getElementById("myUL").appendChild(li);
-//     }
-//     // document.getElementById("myInput").value = "";
-// });
-
-// document.querySelector("moodBox").addEventListener("click", function (event) {
-//     let target = event.target;
-
-//     if (target.classList.contains("unshift-button")) {
-//         newElement.unshift(li);
-//     }
-//     else if (target.classList.contains("push-button")) {
-//         newElement.push(li);
-//     }
-//     else if (target.classList.contains("shift-button")) {
-//         newElement.shift(li);
-//     }
-//     else (target.classList.contains("pop-button")) {
-//         newElement.pop(li);
-//     }
-
-// });

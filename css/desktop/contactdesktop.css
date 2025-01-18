@@ -4,11 +4,11 @@
     --light-beige: #FDEFE6;
     --brown: #BA936F;
     --dark-grey: #343434;
+    --dark-darkbrown: #2d241c;
     --title-font: Kanit;
     --text-font: DM Sans;
 }
 
-@media only screen and (min-width: 900.99px) {
 * {
     box-sizing: border-box;
     margin: 0;
@@ -33,24 +33,21 @@ nav {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    display: inherit;
     cursor: pointer;
     /* background-color: pink; */
 }
 
-.logomobile, .menu, .contact {
-    display: none;
-}
-
-.overlaynav {
-    display: none;
+.logo img {
+    width: 50px;
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
     overflow: hidden;
     cursor: pointer;
+    padding: 0;
 }
 
 nav li {
@@ -71,7 +68,6 @@ nav li a {
 nav li a:hover {
     color: var(--dark-grey);
     border-bottom: 2px solid var(--dark-grey);
-
 }
 
 .darkmode {
@@ -86,7 +82,6 @@ nav li a:hover {
     color: #343434;
     transition: color 0.4s ease;
 }
-
 
 main {
     display: flex;
@@ -162,7 +157,7 @@ form h2 {
     display: flex;
     justify-content: center;
     padding: 20px;
-    color: var(--brown);
+    color: var(--light-beige);
 
 }
 
@@ -176,8 +171,9 @@ form h2 {
     border: none;
     background: none;
     margin: 10px;
+    padding: 5px 10px;
     font-size: 20px;
-    color: var(--brown);
+    color: var(--light-beige);
 }
 
 .unshift-button:hover, .push-button:hover {
@@ -192,28 +188,64 @@ form h2 {
     border-radius: 20%;
 }
 
+.clearbox {
+    display: flex;
+    justify-content: center;
+}
+
+.clear-button {
+    color: var(--light-beige);
+    background-color: var(--dark-darkbrown);
+    margin: 20px;
+    font-weight: 800;
+    padding: 5px 10px 5px 10px;
+    transition: 0.4s ease;
+}
+
+.clear-button:hover {
+    color: var(--dark-darkbrown);
+    background-color: white;
+    
+}
+
 form ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
 
 form ul li {
+    margin: 5px;
     position: relative;
-    padding: 12px 8px 12px 40px;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    padding: 12px 0px 12px 0px;
     list-style-type: none;
+    font-weight: 900;
+    color: var(--dark-grey);
     background-color: var(--light-beige);
     border-radius: 50px;
-    font-size: 12px;
+    font-size: 14px;
     transition: 0.2s;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
 }
 
+#moodBox {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: var(--dark-darkbrown);
+}
 
 .moodbox {
     display: flex;
     justify-content: center;
+    /* background-color: yellow; */
 }
 
 .mood-input {
@@ -221,8 +253,6 @@ form ul li {
     border: none;
     box-shadow: none;
 }
-
-
 
 .submit-button {
     font-family: var(--title-font);
@@ -261,19 +291,15 @@ form ul li {
 
 .socials li {
     margin: 20px;
-    
 }
 
 .socials a {
     text-decoration: none;
     color: var(--brown);
-
-    
 }
 
 .socials a i {
     font-size: 3rem;
-
 }
 
 .socials a:hover {
@@ -281,8 +307,6 @@ form ul li {
     transition: color .4s ease;
     transform: scale(2, 0.5);
 }
-
-
 
 footer {
     position: relative;
@@ -294,12 +318,30 @@ footer {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    /* border-top: 2px solid var(--light-beige); */
+    border-top: 2px solid var(--light-beige);
     /* background-color: yellow; */
 }
 
 footer p {
     font-size: 10px;
+    padding-bottom: 0;
+}
+
+footer div span {
+    display: inline-block;
+}
+
+.footer-left {
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-items: start;
+    text-align: start;
+    justify-content: center;
+    height: 40px;
+    /* background-color: pink; */
 }
 
 .highlight {
@@ -343,5 +385,7 @@ time {
     font-size: 10px;
 }
 
-
+/* Mobile CSS */
+.logomobile, .menu, .contact, .overlaynav, .mobile-hi, .mobile-name, .arrow {
+    display: none;
 }

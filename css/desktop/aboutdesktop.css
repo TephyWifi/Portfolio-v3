@@ -530,18 +530,6 @@ time {
 }
 
 /* Mobile CSS */
-.logomobile, .menu, .contact {
-    display: none;
-}
-
-.overlaynav {
-    display: none;
-}
-
-.mobile-hi, .mobile-name {
-    display: none;
-}
-
-.arrow {
+.logomobile, .menu, .contact, .overlaynav, .mobile-hi, .mobile-name, .arrow {
     display: none;
 }

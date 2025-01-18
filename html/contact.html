@@ -8,11 +8,12 @@
     <meta name="author" content="Stephanie Reiso">
     <meta name="keywords" content="html,css,js,portfolio">
     <meta name="description" content="Stephanie Reiso coding portfolio">
-    <link rel="stylesheet" media="screen and (min-width: 900.99px)" href="../css/desktop/contactdesktop.css">
-    <link rel="stylesheet" media="screen and (min-width: 140px) and (max-width: 900px)"
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="../css/desktop/contactdesktop.css">
+    <link rel="stylesheet" media="screen and (min-width: 140px) and (max-width: 899.99px)"
         href="../css/mobile/contactmobile.css">
     <link rel="stylesheet" href="../css/media.css">
-    <link rel="stylesheet" href="../css/darkmode.css">
+    <link rel="stylesheet" href="../css/darkmode.darkcontact.css">
+    <script type="module" src="../js/script.js"></script>
     <script type="module" src="../js/contactscript.js"></script>
     <link rel="icon" type="image/x-icon" href="../img/favicon2.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,25 +31,25 @@
 <body>
     <header>
         <nav>
-            <div class="navcontainer">
-                <a href="index.html"><img class="logo" src="../img/logo.png" alt="home"></a>
-                <div class="logomobile"><img class="logo" src="img/logo.png"></div>
-                <div id="myMenu" class="menu" onclick="toggleNav()">MENU</div>
-                <script src="../js/script.js"></script>
-                <div id="myOverlaynav" class="overlaynav" style="width: 0;">
-                    <a href="../index.html">HOME</a>
-                    <a href="../html/about.html">ABOUT</a>
-                    <a href="../html/contact.html" aria-current="page">CONTACT</a>
-                    <span class="darkmodemobile" onclick="switchMode()">&#9788;</span>
-                </div>
+            <div class="logo">
+                <a href="../index.html"><img src="../img/logo.png" alt="home"></a>
             </div>
-
             <ul>
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="../html/about.html">ABOUT</a></li>
                 <li><a href="../html/contact.html" aria-current="page">CONTACT</a></li>
             </ul>
-            <span class="darkmode" onclick="switchMode()">&#9788;</span>
+            <span id="darkIcon" class="darkmode">&#9788;</span>
+
+            <!-- Mobile -->
+            <div class="logomobile"><img src="../img/logo.png"></div>
+            <button id="myMenu" type="button" class="menu">MENU</button>
+            <div id="myOverlaynav" class="overlaynav" style="width: 0;">
+                <a href="../index.html">HOME</a>
+                <a href="../html/about.html">ABOUT</a>
+                <a href="../html/contact.html" aria-current="page">CONTACT</a>
+                <span class="darkmodemobile">&#9788;</span>
+            </div>
         </nav>
     </header>
 
@@ -57,7 +58,7 @@
             <div class="contact-form-container">
                 <h1>Let's Talk!</h1>
                 <!-- add action=/action_page.php eller noe for å inkludere et sted meldingen blir sendt til? -->
-                <form id="contactform">
+                <form id="contactForm">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Name*" required>
@@ -74,7 +75,7 @@
                             required></textarea>
                         <span class="error-message" id="messageError"></span>
                     </div>
-                    <div id= "moodBox" class="form-group">
+                    <div id="moodBox" class="form-group">
                         <label for="mood">Mood</label>
                         <h2>Share your mood with me!</h2>
                         <div class="moodbox">
@@ -89,16 +90,14 @@
                             <button type="button" class="push-button">+</button>
                             <button type="button" class="pop-button">-</button>
                         </div>
-                        <span class="error-message" id="emailError"></span>
-                    </div>
-                    <div>
-
-                        <ul></ul>
+                        <span class="error-message" id="moodError"></span>
+                        <div class="clearbox">
+                            <button type="button" class="clear-button">CLEAR MOOD</button>
+                        </div>
                     </div>
                     <button type="submit" class="submit-button">Send Message</button>
                 </form>
             </div>
-            <script src="../js/contactscript.js"></script>
         </section>
 
         <section>
@@ -115,17 +114,21 @@
     </main>
 
     <footer>
-        <p>Designed in <span class="highlight"><a href="https://www.figma.com/" target="_blank"
-                    rel="noreferrer noopener" aria-label="Figma (opens in a new tab)">Figma</a></span> and coded in
-            <span class="highlight"><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer noopener"
-                    aria-label="Visual Studio Code (opens in a new tab)">Visual Studio
-                    Code</a></span><br>Deployed with <span class="highlight"><a href="https://vercel.com/"
-                    target="_blank" rel="noreferrer noopener"
-                    aria-label="Vercel (opens in a new tab)">Vercel</a></span>.
-        </p>
+        <div class="footer-left">
+            <p>Designed in <span class="highlight"><a class="highlight" href="https://www.figma.com/" target="_blank"
+                        rel="noreferrer noopener" aria-label="Figma (opens in a new tab)">Figma</a></span> and coded in
+                <span class="highlight"><a href="https://code.visualstudio.com/" target="_blank"
+                        rel="noreferrer noopener" aria-label="Visual Studio Code (opens in a new tab)">Visual Studio
+                        Code</a></span>
+            </p>
+            <p>Deployed with <span class="highlight"><a href="https://vercel.com/" target="_blank"
+                        rel="noreferrer noopener" aria-label="Vercel (opens in a new tab)">Vercel</a></span>.
+            </p>
+        </div>
+
         <div>
             <img src="../img/logo.png" alt="logo">
-            <p class="footer-copyright">Stephanie Reiso &copy;2024</p>
+            <p class="footer-copyright">Stephanie Reiso &copy;<time datetime="2025">2025</time></p>
         </div>
 
     </footer>
