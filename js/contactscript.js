@@ -73,8 +73,11 @@ document.getElementById("moodBox").addEventListener("click", function (event) {
     let target = event.target;
 
     if (target.classList.contains("unshift-button")) {
-        const mood = inputField.value.trim();
+        let mood = inputField.value.trim();
         if (mood !== '') {
+            if (!mood.startsWith('#')) {
+                mood = '#' + mood;
+            }
             moodList.unshift(mood);
             showMood();
         }
@@ -84,8 +87,11 @@ document.getElementById("moodBox").addEventListener("click", function (event) {
         inputField.value = '';
     }
     else if (target.classList.contains("push-button")) {
-        const mood = inputField.value.trim();
+        let mood = inputField.value.trim();
         if (mood !== '') {
+            if (!mood.startsWith('#')) {
+                mood = '#' + mood;
+            }
             moodList.push(mood);
             showMood();
         }
@@ -104,6 +110,13 @@ document.getElementById("moodBox").addEventListener("click", function (event) {
         if (moodList.length > 0) {
             moodList.pop();
             showMood();
+        }
+    }
+    else if (target.classList.contains("clear-button")) {
+        if (moodList.length > 0) {
+            moodList = [];
+            showMood();
+            alert("Hope your mood is as clear as this list!")
         }
     }
 });

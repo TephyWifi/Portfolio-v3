@@ -2,11 +2,12 @@
 :root {
     --white: #ffffff;
     --light-beige: #FDEFE6;
-    --brown: #BA936F;
+    --brown: rgb(186, 147, 111);
     --dark-grey: #343434;
     --dark-darkbrown: #2d241c;
     --title-font: Kanit;
     --text-font: DM Sans;
+    --funny-font: Fuzzy Bubbles;
 }
 
 * {
@@ -157,7 +158,7 @@ form h2 {
     display: flex;
     justify-content: center;
     padding: 20px;
-    color: var(--light-beige);
+    color: var(--brown);
 
 }
 
@@ -171,9 +172,9 @@ form h2 {
     border: none;
     background: none;
     margin: 10px;
-    padding: 5px 10px;
+    padding: 3px 10px;
     font-size: 20px;
-    color: var(--light-beige);
+    color: var(--brown);
 }
 
 .unshift-button:hover, .push-button:hover {
@@ -194,17 +195,18 @@ form h2 {
 }
 
 .clear-button {
-    color: var(--light-beige);
-    background-color: var(--dark-darkbrown);
+    color: var(--brown);
+    background-color: var(--light-beige);
     margin: 20px;
     font-weight: 800;
     padding: 5px 10px 5px 10px;
     transition: 0.4s ease;
+    border: none;
 }
 
 .clear-button:hover {
     color: var(--dark-darkbrown);
-    background-color: white;
+    /* background-color: white; */
     
 }
 
@@ -224,9 +226,10 @@ form ul li {
     width: 75%;
     padding: 12px 0px 12px 0px;
     list-style-type: none;
+    font-family: var(--funny-font);
     font-weight: 900;
-    color: var(--dark-grey);
-    background-color: var(--light-beige);
+    color: var(--white);
+    background-color: rgba(186, 147, 111, 0.6);
     border-radius: 50px;
     font-size: 14px;
     transition: 0.2s;
@@ -239,7 +242,7 @@ form ul li {
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 10px;
-    background-color: var(--dark-darkbrown);
+    background-color: var(--light-beige);
 }
 
 .moodbox {
