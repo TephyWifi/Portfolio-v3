@@ -1,21 +1,4 @@
-const element = document.getElementById("myMenu");
-element.addEventListener("click", function toggleNav() {
-    let element = document.getElementById("myOverlaynav");
-    let shown = element.getAttribute("data-isshown");
-    // element.addEventListener("click", toggleNav);
-
-    if (shown == "true") {
-        element.setAttribute("data-isshown", "false");
-        element.style.width = "0";
-        document.querySelector('#myMenu').textContent = 'MENU';
-    }
-    else {
-        element.setAttribute("data-isshown", "true");
-        element.style.width = "100%";
-        document.querySelector('#myMenu').textContent = 'CLOSE';
-    }
-});
-
+// Contact form
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault();
 

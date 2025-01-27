@@ -1,5 +1,3 @@
-
-
 // Navbar
 const element = document.getElementById("myMenu");
 element.addEventListener("click", function toggleNav() {
@@ -19,11 +17,23 @@ element.addEventListener("click", function toggleNav() {
     }
 });
 
+// Darkmode
 document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("darkIcon");
+    const body = document.body;
+
+    if (localStorage.getItem("darkmode") === "enabled") {
+        body.classList.add("switchmode");
+    }
+
     button.addEventListener("click", () => {
-        document.getElementById("darkIcon");
-        let element = document.body;
-        element.classList.toggle("switchmode")
+        body.classList.toggle("switchmode");
+
+        if (body.classList.contains("switchmode")) {
+            localStorage.setItem("darkmode", "enabled");
+        }
+        else {
+            localStorage.setItem("darkmode", "disabled");
+        }
     });
 });
