@@ -20,6 +20,7 @@ element.addEventListener("click", function toggleNav() {
 // Darkmode
 document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("darkIcon");
+    const mbutton = document.getElementById("darkmIcon")
     const body = document.body;
 
     if (localStorage.getItem("darkmode") === "enabled") {
@@ -27,6 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     button.addEventListener("click", () => {
+        body.classList.toggle("switchmode");
+
+        if (body.classList.contains("switchmode")) {
+            localStorage.setItem("darkmode", "enabled");
+        }
+        else {
+            localStorage.setItem("darkmode", "disabled");
+        }
+    });
+
+    mbutton.addEventListener("click", () => {
         body.classList.toggle("switchmode");
 
         if (body.classList.contains("switchmode")) {
