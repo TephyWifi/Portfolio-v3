@@ -1,0 +1,113 @@
+/* Mobile */
+
+:root {
+    --white: #ffffff;
+    --light-beige: rgb(253, 239, 230);
+    --brown: #BA936F;
+    --dark-grey: #343434;
+    --dark-brown: #342A21;
+    --dark-darkbrown: #2d241c;
+    --title-font: Kanit;
+    --text-font: DM Sans;
+}
+
+/* Need to figure out why hover effect persists */
+
+.switchmode {
+
+    nav {
+        background-color: var(--dark-darkbrown); 
+        background-image: none;
+    }
+
+    .menu {
+        border: none;
+        background: none;
+        color: var(--white);
+
+    }
+
+    .overlaynav {
+        background-color: var(--dark-brown);
+    }
+
+    .overlaynav a {
+        color: var(--white);
+    }
+
+    .darkmodemobile {
+        color: var(--white);
+    }
+
+    .mobilebutton {
+        text-align: center;     
+        padding-bottom: 100px;
+    }
+
+    button {
+        color: var(--light-beige);
+        background-color: var(--brown);
+        border: 2px solid var(--dark-brown);
+
+    }
+
+    .hero-container {
+        margin: 0;
+        padding-top: 20px;
+        background-color: var(--dark-brown);
+    }
+
+    .hero-box {
+        background-color: var(--dark-darkbrown);
+    }
+
+    .hero-hl {
+        display: none;
+    }
+    
+    .hero-vl {
+        display: none;
+    }
+
+    header {
+        background: var(--dark-brown);
+    }
+
+    .arrow {
+        border: solid var(--brown);
+        border-width: 0 3px 3px 0;
+    }
+
+    main {
+        background: var(--dark-darkbrown);
+    }
+
+    p {
+        color: var(--white);
+    }
+
+    footer {
+        border-top: 2px solid var(--dark-brown);
+        background-image: none;
+        background-color: var(--dark-darkbrown); 
+        padding-top: 10px;
+    }
+
+    footer p {
+        color: var(--white);
+    
+    }
+    
+    .highlight a:link {
+        color: var(--light-beige);
+    }
+    
+    .highlight a:visited {
+        color: var(--brown);
+    }
+
+    time {
+        font-size: 10px;
+    }
+
+}

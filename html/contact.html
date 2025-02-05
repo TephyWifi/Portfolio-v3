@@ -12,7 +12,8 @@
     <link rel="stylesheet" media="screen and (min-width: 140px) and (max-width: 899.99px)"
         href="../css/mobile/contactmobile.css">
     <link rel="stylesheet" href="../css/media.css">
-    <link rel="stylesheet" href="../css/darkmode/darkcontact.css">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="../css/darkmode/darkcontact.css">
+    <link rel="stylesheet" media="screen and (min-width: 140px) and (max-width: 899.99px)" href="../css/darkmode-mobile/dmcontact.css">
     <script type="module" src="../js/script.js"></script>
     <script type="module" src="../js/contactscript.js"></script>
     <link rel="icon" type="image/x-icon" href="../img/favicon2.ico">
@@ -30,88 +31,91 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="../index.html"><img src="../img/logo.png" alt="home"></a>
-            </div>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="../html/about.html">ABOUT</a></li>
-                <li><a href="../html/contact.html" aria-current="page">CONTACT</a></li>
-            </ul>
-            <span id="darkIcon" class="darkmode">&#9788;</span>
+    <nav>
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="home"></a>
+        </div>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../html/about.html">ABOUT</a></li>
+            <li><a href="../html/contact.html" aria-current="page">CONTACT</a></li>
+        </ul>
+        <span id="darkIcon" class="darkmode">&#9788;</span>
 
-            <!-- Mobile -->
-            <div class="logomobile"><img src="../img/logo.png"></div>
-            <button id="myMenu" type="button" class="menu">MENU</button>
-            <div id="myOverlaynav" class="overlaynav" style="width: 0;">
-                <a href="../index.html">HOME</a>
-                <a href="../html/about.html">ABOUT</a>
-                <a href="../html/contact.html" aria-current="page">CONTACT</a>
-                <span class="darkmodemobile">&#9788;</span>
-            </div>
-        </nav>
-    </header>
+        <!-- Mobile -->
+        <div class="logomobile"><img src="../img/logo.png"></div>
+        <button id="myMenu" type="button" class="menu">MENU</button>
+        <div id="myOverlaynav" class="overlaynav" style="width: 0;">
+            <a href="../index.html">HOME</a>
+            <a href="../html/about.html">ABOUT</a>
+            <a href="../html/contact.html" aria-current="page">CONTACT</a>
+            <span id="darkmIcon" class="darkmodemobile">&#9788;</span>
+        </div>
+    </nav>
 
     <main class="bg">
-        <section>
-            <div class="contact-form-container">
-                <h1>Let's Talk!</h1>
-                <!-- add action=/action_page.php eller noe for å inkludere et sted meldingen blir sendt til? -->
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Name*" required>
-                        <span class="error-message" id="nameError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Email*" required>
-                        <span class="error-message" id="emailError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Share your thoughts" rows="5"
-                            required></textarea>
-                        <span class="error-message" id="messageError"></span>
-                    </div>
-                    <div id="moodBox" class="form-group">
-                        <label for="mood">Mood</label>
-                        <h2>Share your mood with me!</h2>
-                        <div class="moodbox">
-                            <input type="text" class="mood-input" placeholder="f.ex. #FeelingGood!" id="myInput">
+        <div class="contact-form-container">
+            <h1>Let's Talk!</h1>
+            <!-- add action=/action_page.php eller noe for å inkludere et sted meldingen blir sendt til? -->
+            <form id="contactForm">
+                <div class="section-grid">
+                    <section class="form-left">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Name*" required>
+                            <span class="error-message" id="nameError"></span>
                         </div>
-                        <div class="first-buttons">
-                            <button type="button" class="shift-button">-</button>
-                            <button type="button" class="unshift-button">+</button>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email*" required>
+                            <span class="error-message" id="emailError"></span>
                         </div>
-                        <ul id="myUL"></ul>
-                        <div class="last-buttons">
-                            <button type="button" class="pop-button">-</button>
-                            <button type="button" class="push-button">+</button>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Message*" rows="5"
+                                required></textarea>
+                            <span class="error-message" id="messageError"></span>
                         </div>
-                        <span class="error-message" id="moodError"></span>
-                        <div class="clearbox">
-                            <button type="button" class="clear-button">CLEAR MOOD</button>
+                    </section>
+                    <section class="form-right">
+                        <div id="moodBox" class="form-group">
+                            <label for="mood">Mood</label>
+                            <h2>Share your mood with me</h2>
+                            <div class="moodbox">
+                                <input type="text" class="mood-input" placeholder="f.ex. #FeelingGood!" id="myInput">
+                            </div>
+                            <div class="first-buttons">
+                                <button type="button" class="shift-button">-</button>
+                                <button type="button" class="unshift-button">+</button>
+                            </div>
+                            <ul id="myUL"></ul>
+                            <div class="last-buttons">
+                                <button type="button" class="pop-button">-</button>
+                                <button type="button" class="push-button">+</button>
+                            </div>
+                            <span class="error-message" id="moodError"></span>
+                            <div class="clearbox">
+                                <button type="button" class="clear-button">CLEAR MOOD</button>
+                            </div>
                         </div>
-                    </div>
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
-            </div>
-        </section>
+                    </section>
+                </div>
+                <div class="button-box">
+                    <button type="submit" class="submit-button">SEND MESSAGE</button>
+                </div>
+            </form>
+        </div>
 
-        <section>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/profile.php?id=664245647" target="_blank"
-                        rel="noopener noreferrer"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://github.com/TephyWifi" target="_blank" rel="noopener noreferrer"><i
-                            class="fa fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/stephanie-michelle-j-reiso-36b84519/" target="_blank"
-                        rel="noopener noreferrer"><i class="fa fa-linkedin-square"></i></a></li>
 
-            </ul>
-        </section>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/profile.php?id=664245647" target="_blank" rel="noopener noreferrer"><i
+                        class="fa fa-facebook"></i></a></li>
+            <li><a href="https://github.com/TephyWifi" target="_blank" rel="noopener noreferrer"><i
+                        class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/stephanie-michelle-j-reiso-36b84519/" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-linkedin-square"></i></a></li>
+
+        </ul>
     </main>
 
     <footer>

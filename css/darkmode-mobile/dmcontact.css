@@ -1,50 +1,66 @@
+/* Mobile */
+
 :root {
     --white: #ffffff;
     --light-beige: rgb(253, 239, 230);
-    --brown: rgb(186, 147, 111);
+    --brown: #BA936F;
     --dark-grey: #343434;
-    --dark-brown: rgb(52, 42, 33);
-    --dark-darkbrown: rgb(45, 36, 28);
+    --dark-brown: #342A21;
+    --dark-darkbrown: #2d241c;
     --title-font: Kanit;
     --text-font: DM Sans;
 }
 
+/* Need to figure out why hover effect persists */
 
 .switchmode {
-    /* HOME */
+
     nav {
-        background-image: linear-gradient(230deg, var(--dark-darkbrown) 85%, var(--white) calc(85% + 2px)); 
+        background-color: var(--dark-darkbrown); 
+        background-image: none;
     }
 
-    nav li a {
+    .menu {
+        border: none;
+        background: none;
         color: var(--white);
-    }
-    
-    nav li a:hover {
-        color: var(--brown);
-        border-bottom: 2px solid var(--brown);
-        
+
     }
 
-    .darkmode {
+    .overlaynav {
+        background-color: var(--dark-brown);
+    }
+
+    .overlaynav a {
         color: var(--white);
     }
-    
-    .darkmode:hover {
-        color: #BA936F;
-        transition: color 0.4s ease;
+
+    .darkmodemobile {
+        color: var(--white);
     }
-    
+
+    .mobilebutton {
+        text-align: center;     
+        /* padding-bottom: 100px; */
+    }
+
+    button {
+        color: var(--light-beige);
+        background-color: var(--brown);
+        border: 2px solid var(--dark-brown);
+
+    }
+
+   
+
     main {
-        background: var(--dark-grey);
+        background: var(--dark-darkbrown);
     }
-
-
-    /* CHECK BELOW */
 
     .bg {
         background-image: none;
         background-color: var(--dark-brown);
+        padding-top: 20px;
     }
 
     .contact-form-container {
@@ -63,13 +79,13 @@
         color: var(--light-beige);
     }
 
-    .unshift-button:hover, .push-button:hover {
+    .unshift-button, .push-button {
         background-color: rgb(144, 207, 144);
         color: white;
         border-radius: 20%;
     }
 
-    .shift-button:hover, .pop-button:hover {
+    .shift-button, .pop-button {
         background-color: rgb(245, 145, 145);
         color: white;
         border-radius: 20%;
@@ -80,10 +96,6 @@
         background-color: var(--dark-brown);
     }
 
-    .clear-button:hover {
-        color: var(--brown);
-        /* background-color: white; */
-    }
 
     form ul li {
         color: var(--white);
@@ -100,25 +112,15 @@
         border: solid var(--brown);
     }
 
-    .submit-button:hover {
-        color: var(--brown);
-        background-color: var(--light-beige);
-        border: solid var(--light-beige);
-        transition: color 0.1s ease;
-    }
-
     .socials a {
         color: var(--light-beige);
     }
 
-    .socials a:hover {
-        color: var(--brown);
-    }
-
     footer {
         border-top: 2px solid var(--dark-brown);
-        background-image: linear-gradient(130deg, var(--dark-darkbrown) 80%, var(--white) calc(80% + 2px)); 
-
+        background-image: none;
+        background-color: var(--dark-darkbrown); 
+        padding-top: 10px;
     }
 
     footer p {
@@ -133,13 +135,9 @@
     .highlight a:visited {
         color: var(--brown);
     }
-    
-    .highlight a:hover {
-        color: var(--brown);
-        transition: color 0.4s ease;
+
+    time {
+        font-size: 10px;
     }
 
-    .footer-copyright {
-        color: var(--dark-grey);
-    }
 }
