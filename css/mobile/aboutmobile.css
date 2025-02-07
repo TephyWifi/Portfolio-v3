@@ -506,9 +506,13 @@ footer div img {
 
 .footer-copyright {
     position: relative;
-    font-size: 10px;
+    font-size: 12px;
     padding: 0;
     padding-bottom: 10px;
+}
+
+time {
+    font-size: 12px;
 }
 
 /* Desktop CSS */
@@ -527,3 +531,4 @@ nav ul {
 .hero-title-container {
     display: none;
 }
+
